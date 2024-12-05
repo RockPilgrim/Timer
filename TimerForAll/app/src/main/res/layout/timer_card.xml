@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/card_view"
     android:layout_width="match_parent"
-    android:layout_height="120dp"
-    android:layout_marginTop="5dp"
-    app:cardBackgroundColor="@color/colorCard"
-    tools:context=".WTesting.TimerFragment">
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginBottom="4dp"
+    app:cardBackgroundColor="@color/colorCard">
 
     <LinearLayout
         android:id="@+id/settings_panel"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="gone"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:visibility="gone">
+
         <ImageView
             android:layout_width="95dp"
             android:layout_height="95dp"
             android:layout_gravity="center"
             android:layout_margin="5dp"
-            android:src="@drawable/replay_10_black_24dp"/>
+            android:src="@drawable/replay_10_black_24dp" />
+
         <ImageView
             android:id="@+id/play_button"
             android:layout_width="95dp"
@@ -29,6 +33,7 @@
             android:layout_gravity="center"
             android:layout_margin="5dp"
             android:src="@drawable/play_arrow_black_24dp" />
+
         <ImageView
             android:layout_width="95dp"
             android:layout_height="95dp"
@@ -36,6 +41,7 @@
             android:layout_margin="5dp"
             android:src="@drawable/forward_10_black_24dp" />
     </LinearLayout>
+
     <TextView
         android:id="@+id/inner_text"
         android:layout_width="match_parent"
@@ -44,9 +50,10 @@
         android:maxLines="1"
         android:text="Hello World!"
         android:textColor="@color/colorTextLight"
-        android:textSize="60sp"
+        android:textSize="54sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-</android.support.v7.widget.CardView>
+
+</androidx.cardview.widget.CardView>
